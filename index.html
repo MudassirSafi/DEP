@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #81c1dd;
+  }
+  
+  /* Navigation */
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* About */
+  .profile {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .profile img {
+    max-width: 200px;
+    border-radius: 50%;
+  }
+  
+  /* Skills */
+  h1
+  {
+    text-align: center;
+    padding: 40px;
+  }
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .skill {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  
+/* Apply styles to each skill icon */
+.skill {
+  width: 120px;
+  height: 120px;
+  margin: 10px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.skill img {
+  max-width: 60%;
+  max-height: 60%;
+  margin-bottom: 10px;
+}    
+
+.skill p {
+  margin: 0;
+}
+
+/* Hover effect */
+.skill:hover {
+  background-color: #3498db;
+  cursor: pointer;
+  color: white;
+}
+   
+
+
+  /* Projects */
+  .project {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  #recommendationList {
+      list-style: none;
+      padding: 0;
+    }
+    .recommendation {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    #popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      padding: 20px;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+  
+/* Existing styles... */
+
+#submitRecommendation {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#submitRecommendation:hover {
+  background-color: #0056b3;
+}
+
+/* Existing styles... */
+
+/* ...... FOOTER ..... */
+
+footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  border-top: 1px solid #ddd;
+}
+
+  </style>
+
+
+  <title>My Portfolio</title>
+</head>
+<body>
+  <header>
+    <div class="contact-info">
+      <h1>Muhammad Mudassir</h1>
+      <p>Email: lala81681@gmail.com</p>
+      <p>Contact: +92 331 96 13 655</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#recommendationList">Recommendations</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section id="about">
+    <div class="profile">
+      <img src="profile.jpeg" alt="Profile Image">
+      <h2>Hi I'm Muhammad Mudassir</h2>
+      <p>Hi there! I'm a passionate learner with a strong background in web development.</p>
+    </div>
+  </section>
+  <h1>SKILLS</h1>
+  <section id="skills">
+    <div class="skills-list">
+      <div class="skill">
+        <img src="html.png" alt="HTML">
+        <p>HTML</p>
+      </div>
+      <div class="skill">
+        <img src="css.png" alt="CSS">
+        <p>CSS</p>
+      </div>
+      <div class="skill">
+        <img src="javascript.png" alt="JavaScript">
+        <p>JavaScript</p>
+      </div>
+      <div class="skill">
+        <img src="react.png" alt="React">
+        <p>React</p>
+      </div>
+      <div class="skill">
+        <img src="Nodejs.png" alt="Node.js">
+        <p>Node.js</p>
+      </div>
+    </div>
+  </section>
+  
+  <section id="projects">
+    <div class="project">
+        <h1>PROCETS</h1>
+      <h2>Project 1</h2>
+      <p>SNAKE GAME. I've created animated snake game </p>
+      Working Progress 
+      <progress value="95" max="100"> </progress>
+
+    </div>
+    <div class="project">
+      <h2>Project 2</h2>
+      <p>I've created a library management system Website.</p>
+      Working Progress 
+      <progress value="95" max="100"> </progress>
+    </div>
+    <div class="project">
+      <h2>Project 3</h2>
+      <p>I've created a GYM management system Website.</p>
+      Working Progress 
+      <progress value="95" max="100"> </progress>
+    </div>
+  </section>
+  
+    <h1>Recommendations</h1>
+    <ul id="recommendationList">
+      <li class="recommendation">Great product! I highly recommend it.</li>
+      <li class="recommendation">This is the best service I've ever used.</li>
+      <li class="recommendation">I'm extremely satisfied with my experience.</li>
+    </ul>
+    <center><button id="showPopupButton">Leave a Recommendation</button>
+    <div id="popup">
+      <h2>Leave a Recommendation</h2>
+      <textarea id="recommendationText" rows="4" cols="50" placeholder="Enter your recommendation"></textarea>
+      <button id="submitRecommendation">Submit</button>
+    </div>
+     </center>
+
+  <footer>
+    <p>&copy; 2024 Muhammad Mudassir. All rights reserved.</p>
+  </footer>
+
+
+    <script>
+      const showPopupButton = document.getElementById('showPopupButton');
+      const popup = document.getElementById('popup');
+      const submitButton = document.getElementById('submitRecommendation');
+      const recommendationText = document.getElementById('recommendationText');
+      const recommendationList = document.getElementById('recommendationList');
+  
+      showPopupButton.addEventListener('click', () => {
+        popup.style.display = 'block';
+      });
+  
+      submitButton.addEventListener('click', () => {
+        const newRecommendation = recommendationText.value;
+        if (newRecommendation.trim() !== '') {
+          const newListItem = document.createElement('li');
+          newListItem.classList.add('recommendation');
+          newListItem.textContent = newRecommendation;
+          recommendationList.appendChild(newListItem);
+  
+          popup.style.display = 'none';
+          recommendationText.value = '';
+  
+          // Show confirmation popup
+          alert('Thank you for submitting a recommendation!');
+        }
+      });
+    </script>
+
+
+</body>
+</html>
